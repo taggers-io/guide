@@ -17,7 +17,7 @@
       .call(window,"fallback-url",window,"fallback",window.parent);
     /* installer */
     (function(e,n,c,t){var a=!1,o=function(){a||c&&c()},r=function(e,n){var c=document.createElement("SCRIPT"),t=document.getElementsByTagName("SCRIPT")[0];c.src=e,c.onload=n,t.parentNode.insertBefore(c,t)},i=function(){a=!0,t&&t()};setTimeout(o,n),r(e,i)})
-      .call(window,"//static.pickme.taggers.io/js/helpers/pickme-iframe-host-manager.js",{{ timeout }},window.fallback,function(){
+      .call(window,"//static.pickme.taggers.io/js/helpers/pickme-iframe-client-manager.js",{{ timeout }},window.fallback,function(){
         PickmeIframeClientManager.install({
             container: document.getElementById('js-pickme-searcher-container'),
             mallName: '{{ 발급받은 쇼핑몰명 }}',
